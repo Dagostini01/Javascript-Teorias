@@ -1,0 +1,22 @@
+<html>
+    <meta charset="UTF-8" />
+    <script>
+
+        function printi(result){
+            console.log("O Resultado é: ", result)
+        }
+
+        function soma(a, b, cb){
+            let soma = a + b
+            cb(soma)
+        }
+        function multi(a, b, cb){
+            let soma = a * b
+            cb(soma)
+        }
+
+        soma(5, 10, printi())
+        multi(10, 5, printi())
+
+    </script>
+</html>
