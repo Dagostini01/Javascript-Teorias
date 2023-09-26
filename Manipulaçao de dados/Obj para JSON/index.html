@@ -1,0 +1,25 @@
+<html>
+    <meta charset="UTF-8" />
+    <script>
+        
+        const people = [{
+            id: 1,
+            nome: "Pedro",
+            idade: 22,
+            email: "pedro123@gmail.com"
+        },
+        {
+            id: 2,
+            nome: "Gabi",
+            idade: 20,
+            email: "gabi123@gmail.com"
+        }]
+
+        const json = '[{"id": 1, "nome": "Pedro", "idade": 22, "email": "pedro123@gmail.com"}'
+
+        console.log(JSON.stringify(people)) //retorna o obj em JSON
+
+        console.log(JSON.parse(json)) //retorna o json em obj
+
+    </script>
+</html>
