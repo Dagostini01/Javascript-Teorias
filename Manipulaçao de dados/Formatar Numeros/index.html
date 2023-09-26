@@ -1,0 +1,17 @@
+<html>
+    <meta charset="UTF-8" />
+    <script>
+        
+        let num = 1234.56
+
+        console.log(num.toFixed(1)) //retorna o valor com 1 casa pós virgula
+        console.log(Math.ceil(num)) //arredonda para cima
+        console.log(Math.floor(num)) //arredonda para baixo
+
+        console.log(new Intl.NumberFormat("pt-BR", { //formata para real
+            style: "currency",
+            currency: "BRL"
+        }).format(value))
+
+    </script>
+</html>
