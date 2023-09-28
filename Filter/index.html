@@ -1,0 +1,22 @@
+<html>
+    <meta charset="UTF-8" />
+    <script>
+
+        const num = [5, 80, 67, 11, 2, 8, 56]
+
+        //quero que me retorna em uma lista os nums maiores que 10
+        let lista = []
+        for (const i of num){
+            if (i > 10){
+                lista.push(i)
+            }
+        }
+        
+        console.log(lista)
+
+        //utilizando o filter
+        let filtragem = num.filter((n) => n > 10)
+        console.log(filtragem) //retorna os nums
+        
+    </script>
+</html>
