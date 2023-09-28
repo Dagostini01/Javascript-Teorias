@@ -1,0 +1,17 @@
+<html>
+    <meta charset="UTF-8" />
+    <script>
+        
+        //reduce vai reduzir tudo em uma coisa só
+        const frutas = [
+            {nome:"banana", quantidade: 2},
+            {nome:"maça", quantidade: 3},
+            {nome:"pera", quantidade: 4},
+            {nome:"goiaba", quantidade: 5},
+            {nome:"limão", quantidade: 6},
+        ]
+
+        frutas.reduce((valorAnterior, valorAtual) => valorAnterior + valorAtual.quantidade, 0) //o 0 é o valor inicial
+
+    </script>
+</html>
