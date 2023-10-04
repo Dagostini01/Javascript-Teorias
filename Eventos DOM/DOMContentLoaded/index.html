@@ -4,10 +4,15 @@
 <body>
     <script>
         //Espera o DOM carregar para rodar o script
-        document.addEventListener("DOMContentLoaded", () => {
+
+        const main = () => {
+            function func1() {
             const h1 = document.querySelector("#title")
             console.log("h1: ", h1)
-        })
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", main)
     </script>
 
     <h1 id="title">Minha página</h1>
