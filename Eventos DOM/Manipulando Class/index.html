@@ -1,0 +1,33 @@
+<html>
+<meta charset="UTF-8" />
+
+<style>
+    .highlight{
+        color: red;
+    }
+</style>
+
+<body>
+
+   <h1 class="highlight" id="titulo">TItulo da página</h1>
+   <button id="btn">Alterar class</button>
+
+    <script>
+        
+        const titulo = document.querySelector("#titulo")
+        const button = document.querySelector("#btn")
+
+        button.addEventListener("click", () => {
+            // if(titulo.classList.contains("highlights")){
+            //     titulo.classList.remove("hightlights")
+            // }else{
+            //     titulo.classList.add("hightlight")
+            // }
+            titulo.classList.toggle("highlight")
+        })
+
+    </script>
+
+</body>
+
+</html>
