@@ -1,0 +1,29 @@
+<html>
+<meta charset="UTF-8" />
+
+<body>
+
+   <form action="https://www.google.com/search" method="get">
+    <label for="q">Busca</label>
+    <input type="text" name="q">
+    <input type="submit" value="Pesquisar">
+   </form>
+
+    <script>
+        
+        const forms = document.querySelector("form")
+        forms.addEventListener("submit", (event) => {
+            const texto = event.target.querySelector("input[name=q]").value
+            
+            if(!texto) {
+                event.preventDefault()
+                alert("Busca obrigatória!")
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>
