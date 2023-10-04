@@ -1,0 +1,22 @@
+<html>
+<meta charset="UTF-8" />
+
+<body>
+
+   <h1 id="titulo">TItulo da página</h1>
+   <button id="btn">Alterar cor</button>
+
+    <script>
+        
+        const titulo = document.querySelector("#titulo")
+        const button = document.querySelector("#btn")
+
+        button.addEventListener("click", () => {
+            titulo.style = "color:red; font-size: 55px"
+        })
+
+    </script>
+
+</body>
+
+</html>
