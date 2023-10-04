@@ -1,0 +1,24 @@
+<html>
+<meta charset="UTF-8" />
+
+<body>
+
+    <input type="text" placeholder="digite aqui">
+
+    <script>
+        
+        const input = document.querySelector("input[type = text]")
+
+        input.addEventListener("keydown", (event) => {
+            console.log("event", `${event.key} - ${event.keyCode}`)
+        })
+
+        if(event.keyCode === 13) {
+            alert(`Tecla enter pressionada - ${input.value}`)
+        }
+
+    </script>
+
+</body>
+
+</html>
