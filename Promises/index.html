@@ -1,0 +1,33 @@
+<html>
+    <meta charset="UTF-8" />
+    <body>
+        <button>Executar</button>
+    </body>
+    
+    <script>
+        
+        //Promises sao feitas para chamar func asyn, func que vao executar nao importa quanto tempo, demore, essa resposta pode vir ou nao e pego essas respostas com as funcoes then() e cath()
+        const button = document.querySelector("button")
+
+        let contador = 0
+
+        button.addEventListener("click", () => {
+            console.log("funcao assincrona startou")
+            const num = ++contador
+            new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if(num % 2 === 0){
+                        resolve(num)
+                    }else{
+                        reject(num)
+                    }
+                }, 1000)
+            }).then((value)=>{
+                console.log(`funcao assincrona finalizou ${value}`)
+            }).catch((value) => {
+                console.error("assincrona erro")
+            })
+        })
+
+    </script>
+</html>
