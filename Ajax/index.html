@@ -1,0 +1,33 @@
+<html>
+    <meta charset="UTF-8" />
+
+    <body>
+        
+        <button>Recuperar Dados</button>
+        
+        <script>
+
+            const btn = document.querySelector("button")
+            btn.addEventListener("click", () => {
+
+                const xhr = new XMLHttpRequest()
+                xhr.open("GET", "https://api.github.com/users/Dagostini01")
+                xhr.send(null)
+                xhr.onreadystatechange = () => {
+                    if(xhr.readyState === 4){
+                        const res = JSON.parse(xhr.responseText)
+                        const name = res.name
+                        const avatarUrl = res.avatar_url
+                        const followers = res.followers
+                        const blogUrl = res.blog
+
+                    }
+                }
+
+            })
+
+        </script>
+
+    </body>
+
+</html>
