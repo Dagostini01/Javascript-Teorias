@@ -21,6 +21,25 @@
                         const followers = res.followers
                         const blogUrl = res.blog
 
+                        // Manipulação do DOM
+                        const avatarEl = document.createElement("img")
+                        avatarEl.setAttribute("src", avatarUrl)
+                        avatarEl.setAttribute("width", "128")
+
+                        const nameEl = document.createElement("h1")
+                        nameEl.innerText = name
+
+                        const followersEl = document.createElement("p")
+                        followersEl.innerText = `Seguidores: ${followers}`
+
+                        const blogEl = document.createElement("a")
+                        blogEl.setAttribute("href", `https://${blogUrl}`)
+                        blogEl.innerText = blogUrl
+
+                        document.body.appendChild(avatarEl)
+                        document.body.appendChild(nameEl)
+                        document.body.appendChild(followersEl)
+                        document.body.appendChild(blogEl)
                     }
                 }
 
